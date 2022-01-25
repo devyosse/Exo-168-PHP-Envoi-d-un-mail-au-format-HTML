@@ -9,7 +9,7 @@
 
 $to = [
     'j.conan@fondationface.org',
-    ...
+    'problème.prob@gmail.com',
 ];
 
 $html = '
@@ -20,8 +20,14 @@ $html = '
         <body>
             <div>
                 <!-- Vos actualités ici -->
+                <p>
+                Concrètement, une newsletter a pour but d’envoyer régulièrement des informations par email 
+                à une liste de destinataires, de maintenir leur intérêt avec des messages ciblés 
+                et de les pousser vers votre objectif de conversion.
+                </p>
             </div>
         </body>
     </html>
 ';
 
+mail($to, $html);
